@@ -15,30 +15,43 @@ public class CharacterControl : MonoBehaviour
     private float curJumpForce;
     private int curNumberJumpClick;
     private bool isJump,
-        isEat;
+        isEat,
+        isMove,
+        isDeath;
     private Rigidbody rigidbody;
     private AnimationControl animation;
     private CapsuleCollider collider;
     private Vector3 contactPoint;
+    private Global global;
 
-    private void Start()
+    private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
         animation = GetComponent<AnimationControl>();
         collider = GetComponent<CapsuleCollider>();
+        global = GameObject.FindGameObjectWithTag("Global").GetComponent<Global>();
+    }
+
+    private void Start()
+    {
         curJumpForce = JumpForce;
+        isMove = true;
     }
 
     private void FixedUpdate()
     {
-        if (!isEat)
+        if (isMove)
         {
             Vector3 direction = transform.forward * Joystick.Vertical + transform.right * Joystick.Horizontal;
             rigidbody.velocity = new Vector3(direction.x * Speed, rigidbody.velocity.y, direction.z * Speed);
-
         }
-        // Изменение анимации в зависимости от положения джойстика
-        animation.StateAnimation(Joystick.Horizontal);
+
+        if (!isDeath)
+        {
+            // Изменение анимации в зависимости от положения джойстика
+            animation.StateAnimation(Joystick.Horizontal);
+        }
+
     }
 
     private void Update()
@@ -62,7 +75,8 @@ public class CharacterControl : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag != "Star" && other.tag != "Fish")
+        var tag = other.tag;
+        if (tag != "Star" && tag != "Fish" && tag != "Enemy")
         {
             if (isJump)
             {
@@ -73,7 +87,7 @@ public class CharacterControl : MonoBehaviour
 
     public void Jump()
     {
-        if (!isEat)
+        if (isMove)
         {
             if (curNumberJumpClick < 1)
             {
@@ -103,13 +117,16 @@ public class CharacterControl : MonoBehaviour
     public void EatFish()
     {
         isEat = true;
+        isMove = false;
         animation.EatFish();
-        rigidbody.velocity = Vector3.zero;
+        StopMotion();
     }
 
     public void FinishedEatingFish()
     {
+        global.IncreaseHeart(1);
         isEat = false;
+        isMove = true;
     }
 
     private void OnCollisionStay(Collision collision)
@@ -123,5 +140,22 @@ public class CharacterControl : MonoBehaviour
                 rigidbody.drag = 0;
             }
         }
+    }
+
+    private void StopMotion() => rigidbody.velocity = Vector3.zero;
+
+    public int Damage(int damage, string name)
+    {
+        animation.Damage(name);
+        StopMotion();
+        var curHeart = global.ReduceHeart(damage);
+        if (curHeart <= 0)
+        {
+            animation.Death();
+            isMove = false;
+            StopMotion();
+            isDeath = true;
+        }
+        return curHeart;
     }
 }

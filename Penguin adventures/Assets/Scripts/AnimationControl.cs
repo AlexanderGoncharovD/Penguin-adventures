@@ -54,4 +54,14 @@ public class AnimationControl : MonoBehaviour
         animator.SetBool("Jump", false);
         animator.Play("Eat");
     }
+
+    public void Damage(string name)
+    {
+        animator.Play("Snake damage");
+    }
+
+    public void Death()
+    {
+        animator.Play("Death");
+    }
 }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fish
+  - Star
+  - Enemy
+  - Global
+  - LeverArm
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - LeverArm
   - 
   - 
   - 
