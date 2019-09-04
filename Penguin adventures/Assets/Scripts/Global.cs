@@ -6,47 +6,52 @@ using UnityEngine.UI;
 public class Global : MonoBehaviour
 {
 
-    public int Star;
-    public Text StarText;
+    public int Star, MaxHeart, Key;
+    public Text T_Star, T_Heart, T_Key;
 
-    public int CurHeart,
-        MaxHeart;
-    public Text CurHeartText;
+    private CharacterControl character;
 
     private void Start()
     {
-        CurHeartText.text = CurHeart + "";
-    }
-
-    public void AddStar()
-    {
-        Star++;
-        StarText.text = Star + "";
-    }
-
-    public void AddHeart()
-    {
-        if (CurHeart > 0)
+        character = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterControl>();
+        if (character == null)
+            Debug.LogError("(Name: '" + gameObject.name + "'): Scripte 'CharacterControl.cs' not found");
+        else
         {
-            MaxHeart++;
-            CurHeart++;
-            CurHeartText.text = CurHeart + "";
+            T_Heart.text = character.Heart + "";
         }
     }
 
-    public int ReduceHeart(int damage)
+    public void AddStar(int value)
     {
-        CurHeart -= damage;
-        CurHeartText.text = CurHeart + "";
-        return CurHeart;
+        Star += value;
+        T_Star.text = Star + "";
     }
+
+    public void AddHeart(int value)
+    {
+        if (character.Heart > 0)
+        {
+            MaxHeart += value;
+            character.Heart += value;
+            T_Heart.text = character.Heart + "";
+        }
+    }
+
+    public void AddKey(int value)
+    {
+        Key += value;
+        T_Key.text = "x" + Key;
+    }
+
+    public void UpdateHeart(int heart) => T_Heart.text = heart + "";
 
     public void IncreaseHeart(int number)
     {
-        if (CurHeart < MaxHeart)
+        if (character.Heart < MaxHeart)
         {
-            CurHeart += number;
-            CurHeartText.text = CurHeart + "";
+            character.Heart += number;
+            T_Heart.text = character.Heart + "";
         }
     }
 }

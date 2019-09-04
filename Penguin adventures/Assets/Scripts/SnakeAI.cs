@@ -110,7 +110,7 @@ public class SnakeAI : MonoBehaviour
                             Vector3 direction = transform.forward * normalized.z + transform.right * normalized.x;
                             rigidbody.velocity = new Vector3(direction.x * speed, rigidbody.velocity.y, direction.z * speed);
 
-                            animation.StateAnimation((camera.WorldToScreenPoint(targetPos) - camera.WorldToScreenPoint(transform.position)).x);
+                            //animation.StateAnimation((camera.WorldToScreenPoint(targetPos) - camera.WorldToScreenPoint(transform.position)).x);
                         }
                         else
                         {
@@ -156,7 +156,7 @@ public class SnakeAI : MonoBehaviour
     private void Look()
     {
         Action = SnakeAction.Look;
-        animation.StateAnimation((camera.WorldToScreenPoint(character.position) - camera.WorldToScreenPoint(transform.position)).x);
+        //animation.StateAnimation((camera.WorldToScreenPoint(character.position) - camera.WorldToScreenPoint(transform.position)).x);
         animation.Look();
         sphereCollider.radius = DistPursuit;
         StartCoroutine(Attack(TimerAttak));
@@ -200,12 +200,12 @@ public class SnakeAI : MonoBehaviour
     private void Bite()
     {
         
-        var curCharacterHeart = target.GetComponent<CharacterControl>().Damage(Damage, "Snake");
+        /*var curCharacterHeart = target.GetComponent<CharacterControl>().Damage(Damage, "Snake");
         if (curCharacterHeart <= 0)
         {
             Sleep();
             GetComponent<SnakeAI>().enabled = false;
-        }
+        }*/
     }
 
     public void FinishedAttack()

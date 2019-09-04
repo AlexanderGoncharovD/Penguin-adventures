@@ -246,13 +246,13 @@
       <HintPath>C:/Program Files (x86)/Unity 2018_4_0f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Program Files/Unity/Projects/Penguin adventures/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Projects/Penguin-adventures/Penguin adventures/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Program Files/Unity/Projects/Penguin adventures/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Projects/Penguin-adventures/Penguin adventures/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Program Files/Unity/Projects/Penguin adventures/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Projects/Penguin-adventures/Penguin adventures/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files (x86)\Unity 2018_4_0f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -624,12 +624,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AnimationControl.cs" />
-    <Compile Include="Assets\Scripts\BonusProperties.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\CharacterControl.cs" />
+    <Compile Include="Assets\Scripts\ControlStateMachinima.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyAnimationControl.cs" />
+    <Compile Include="Assets\Scripts\Enemy\Snake.cs" />
+    <Compile Include="Assets\Scripts\Global.cs" />
+    <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Joystick\FixedJoystick.cs" />
     <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\Scripts\Objects\LeverArm.cs" />
+    <Compile Include="Assets\Scripts\SnakeAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />

@@ -5,14 +5,14 @@ using UnityEngine;
 public class AnimationControl : MonoBehaviour
 {
     
-    private Animator animator;
+    public Animator animator;
     private Transform characterCenter,
         mainCamera;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        characterCenter = transform.FindChild("center").transform;
+        characterCenter = transform.Find("center").transform;
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").transform;
     }
 
@@ -48,7 +48,7 @@ public class AnimationControl : MonoBehaviour
         }
     }
 
-    public void EatFish()
+    public void EatFood()
     {
         animator.SetBool("Walk", false); // Закончить анимацию ходьбы
         animator.SetBool("Jump", false);

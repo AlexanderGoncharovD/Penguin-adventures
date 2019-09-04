@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterControl : MonoBehaviour
 {
+    public int Heart;
 
     public float Speed,
         JumpForce,
@@ -36,6 +37,8 @@ public class CharacterControl : MonoBehaviour
     {
         curJumpForce = JumpForce;
         isMove = true;
+        Heart = global.MaxHeart;
+        global.UpdateHeart(Heart);
     }
 
     private void FixedUpdate()
@@ -70,6 +73,17 @@ public class CharacterControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene("SampleScene");
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (isEat)
+        {
+            if (!animation.animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"))
+            {
+                FinishedEatingFood();
+            }
         }
     }
 
@@ -114,15 +128,16 @@ public class CharacterControl : MonoBehaviour
         curNumberJumpClick = 0;
     }
 
-    public void EatFish()
+    public void EatFood(int value)
     {
-        isEat = true;
+        Heart += value;
         isMove = false;
-        animation.EatFish();
+        animation.EatFood();
+        isEat = true;
         StopMotion();
     }
 
-    public void FinishedEatingFish()
+    public void FinishedEatingFood()
     {
         global.IncreaseHeart(1);
         isEat = false;
@@ -144,18 +159,21 @@ public class CharacterControl : MonoBehaviour
 
     private void StopMotion() => rigidbody.velocity = Vector3.zero;
 
-    public int Damage(int damage, string name)
+    public void Damage(int damage, string name)
     {
-        animation.Damage(name);
-        StopMotion();
-        var curHeart = global.ReduceHeart(damage);
-        if (curHeart <= 0)
+        if (Heart > 0)
         {
+            animation.Damage(name);
+            Heart -= damage;
+            global.UpdateHeart(Heart);
+        }
+        if ( Heart <= 0)
+        {
+            Heart = 0;
             animation.Death();
             isMove = false;
             StopMotion();
             isDeath = true;
         }
-        return curHeart;
     }
 }
