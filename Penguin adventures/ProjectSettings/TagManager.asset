@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Global
   - LeverArm
+  - Star
+  - Joystick
+  - GameLevel
   layers:
   - Default
   - TransparentFX

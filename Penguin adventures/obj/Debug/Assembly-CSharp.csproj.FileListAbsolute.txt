@@ -280,3 +280,5 @@ C:\Program Files\Unity\Projects\Penguin-adventures\Penguin adventures\obj\Debug\
 C:\Program Files\Unity\Projects\Penguin-adventures\Penguin adventures\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Program Files\Unity\Projects\Penguin-adventures\Penguin adventures\obj\Debug\Assembly-CSharp.dll
 C:\Program Files\Unity\Projects\Penguin-adventures\Penguin adventures\obj\Debug\Assembly-CSharp.pdb
+C:\Program Files\Unity\Projects\Penguin-adventures\Penguin adventures\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
+C:\Program Files\Unity\Projects\Penguin-adventures\Penguin adventures\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml

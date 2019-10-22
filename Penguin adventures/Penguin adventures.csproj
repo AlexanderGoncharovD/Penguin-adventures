@@ -623,20 +623,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AnimationControl.cs" />
-    <Compile Include="Assets\Scripts\CameraControl.cs" />
-    <Compile Include="Assets\Scripts\CharacterControl.cs" />
-    <Compile Include="Assets\Scripts\ControlStateMachinima.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Enemy\EnemyAnimationControl.cs" />
-    <Compile Include="Assets\Scripts\Enemy\Snake.cs" />
-    <Compile Include="Assets\Scripts\Global.cs" />
-    <Compile Include="Assets\Scripts\Items\Item.cs" />
-    <Compile Include="Assets\Scripts\Joystick\FixedJoystick.cs" />
-    <Compile Include="Assets\Scripts\Joystick\Joystick.cs" />
-    <Compile Include="Assets\Scripts\LookAtCamera.cs" />
-    <Compile Include="Assets\Scripts\Objects\LeverArm.cs" />
-    <Compile Include="Assets\Scripts\SnakeAI.cs" />
+    <Compile Include="Assets\Scripts\Game\Animations.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Game\Character\CharacterRotation.cs" />
+    <Compile Include="Assets\Scripts\Game\Items\Item.cs" />
+    <Compile Include="Assets\Scripts\Game\Joystick\Joystick.cs" />
+    <Compile Include="Assets\Scripts\Game\LookAtCamera.cs" />
+    <Compile Include="Assets\Scripts\Game\Teleport.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />

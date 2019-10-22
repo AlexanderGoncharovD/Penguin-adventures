@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 8677694802042269953}
   - component: {fileID: 8677694802042269954}
   - component: {fileID: 1196476675317387542}
-  - component: {fileID: 455846970}
+  - component: {fileID: 242337485}
   m_Layer: 0
   m_Name: Star
   m_TagString: Star
@@ -236,7 +236,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &455846970
+--- !u!114 &242337485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,10 +245,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8677694802042269957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77c38015770ecc2408019056467d6b08, type: 3}
+  m_Script: {fileID: 11500000, guid: c0a34a5386b63b749b6e366764e9ed95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
-  Value: 1
-  EffectUse: {fileID: 3234517038334195260, guid: 20ae1326f5b5a95479cd1ed68448068c,
-    type: 3}
+  value: 1
+  effect: {fileID: 3234517038334195260, guid: 20ae1326f5b5a95479cd1ed68448068c, type: 3}

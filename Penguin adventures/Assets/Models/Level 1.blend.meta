@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: 40ec5a5059b7ea046bfda49855141569
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube
+    100004: Cylinder
+    100006: Cylinder.001
+    100008: platform
+    100010: tree
+    100012: Spruce
+    100014: Bridge
+    100016: Circle
+    100018: platform.001
+    100020: Plane
+    100022: Plane.001
+    100024: Island
+    100026: Plane island
+    100028: Plane protrusion
+    100030: Protrusion
+    100032: Teleport
+    100034: Island 0
+    100036: Plane Island 0
+    100038: Island 1
+    100040: Column
+    100042: Column broken
+    100044: Island 1.001
+    100046: Column broken.001
+    100048: Column broken.002
+    100050: Column broken.003
+    100052: Column broken.004
+    100054: Column broken.005
+    100056: Column broken.006
+    100058: Column broken.007
+    100060: Pedestal
+    100062: character sphere
+    100064: Cube.001
+    100066: character sphere.001
+    100068: Tree
+    100070: Tree.001
+    100072: Fire
+    100074: Island 0.000
+    100076: Island 0.001
+    100078: Fire.001
+    100080: Tower room
+    100082: Tower wall
+    100084: Tower room.001
+    100086: Empty
+    100088: Empty.001
+    100090: Roof
+    100092: Tower room door
+    100094: Cube.005
+    100096: Collision mesh
+    100098: Collision mesh 1
+    100100: Collision mesh 2
+    400000: //RootNode
+    400002: Cube
+    400004: Cylinder
+    400006: Cylinder.001
+    400008: platform
+    400010: tree
+    400012: Spruce
+    400014: Bridge
+    400016: Circle
+    400018: platform.001
+    400020: Plane
+    400022: Plane.001
+    400024: Island
+    400026: Plane island
+    400028: Plane protrusion
+    400030: Protrusion
+    400032: Teleport
+    400034: Island 0
+    400036: Plane Island 0
+    400038: Island 1
+    400040: Column
+    400042: Column broken
+    400044: Island 1.001
+    400046: Column broken.001
+    400048: Column broken.002
+    400050: Column broken.003
+    400052: Column broken.004
+    400054: Column broken.005
+    400056: Column broken.006
+    400058: Column broken.007
+    400060: Pedestal
+    400062: character sphere
+    400064: Cube.001
+    400066: character sphere.001
+    400068: Tree
+    400070: Tree.001
+    400072: Fire
+    400074: Island 0.000
+    400076: Island 0.001
+    400078: Fire.001
+    400080: Tower room
+    400082: Tower wall
+    400084: Tower room.001
+    400086: Empty
+    400088: Empty.001
+    400090: Roof
+    400092: Tower room door
+    400094: Cube.005
+    400096: Collision mesh
+    400098: Collision mesh 1
+    400100: Collision mesh 2
+    2100000: No Name
+    2100002: Lever arm
+    2300000: //RootNode
+    2300002: Cube
+    2300004: Cylinder
+    2300006: Cylinder.001
+    2300008: platform
+    2300010: tree
+    2300012: Spruce
+    2300014: Bridge
+    2300016: Circle
+    2300018: platform.001
+    2300020: Plane
+    2300022: Plane.001
+    2300024: Island
+    2300026: Plane island
+    2300028: Plane protrusion
+    2300030: Protrusion
+    2300032: Teleport
+    2300034: Island 0
+    2300036: Plane Island 0
+    2300038: Island 1
+    2300040: Column
+    2300042: Column broken
+    2300044: Island 1.001
+    2300046: Column broken.001
+    2300048: Column broken.002
+    2300050: Column broken.003
+    2300052: Column broken.004
+    2300054: Column broken.005
+    2300056: Column broken.006
+    2300058: Column broken.007
+    2300060: Pedestal
+    2300062: character sphere
+    2300064: Cube.001
+    2300066: character sphere.001
+    2300068: Tree
+    2300070: Tree.001
+    2300072: Fire
+    2300074: Island 0.000
+    2300076: Island 0.001
+    2300078: Fire.001
+    2300080: Tower room
+    2300082: Tower wall
+    2300084: Tower room.001
+    2300086: Roof
+    2300088: Tower room door
+    2300090: Cube.005
+    2300092: Collision mesh
+    2300094: Collision mesh 1
+    2300096: Collision mesh 2
+    3300000: //RootNode
+    3300002: Cube
+    3300004: Cylinder
+    3300006: Cylinder.001
+    3300008: platform
+    3300010: tree
+    3300012: Spruce
+    3300014: Bridge
+    3300016: Circle
+    3300018: platform.001
+    3300020: Plane
+    3300022: Plane.001
+    3300024: Island
+    3300026: Plane island
+    3300028: Plane protrusion
+    3300030: Protrusion
+    3300032: Teleport
+    3300034: Island 0
+    3300036: Plane Island 0
+    3300038: Island 1
+    3300040: Column
+    3300042: Column broken
+    3300044: Island 1.001
+    3300046: Column broken.001
+    3300048: Column broken.002
+    3300050: Column broken.003
+    3300052: Column broken.004
+    3300054: Column broken.005
+    3300056: Column broken.006
+    3300058: Column broken.007
+    3300060: Pedestal
+    3300062: character sphere
+    3300064: Cube.001
+    3300066: character sphere.001
+    3300068: Tree
+    3300070: Tree.001
+    3300072: Fire
+    3300074: Island 0.000
+    3300076: Island 0.001
+    3300078: Fire.001
+    3300080: Tower room
+    3300082: Tower wall
+    3300084: Tower room.001
+    3300086: Roof
+    3300088: Tower room door
+    3300090: Cube.005
+    3300092: Collision mesh
+    3300094: Collision mesh 1
+    3300096: Collision mesh 2
+    4300000: Cube
+    4300002: Cylinder
+    4300004: Cylinder.001
+    4300006: platform
+    4300008: tree
+    4300010: Spruce
+    4300012: Bridge
+    4300014: Circle
+    4300016: platform.001
+    4300018: Plane
+    4300020: Plane.001
+    4300022: Island
+    4300024: Plane island
+    4300026: Protrusion
+    4300028: Plane protrusion
+    4300030: Teleport
+    4300032: Island 0
+    4300034: Plane Island 0
+    4300036: Island 1
+    4300038: Column
+    4300040: Column broken
+    4300042: Island 1.001
+    4300044: Column broken.001
+    4300046: Column broken.002
+    4300048: Column broken.003
+    4300050: Column broken.004
+    4300052: Column broken.005
+    4300054: Column broken.006
+    4300056: Column broken.007
+    4300058: Pedestal
+    4300060: character sphere
+    4300062: Cube.001
+    4300064: character sphere.001
+    4300066: Tree
+    4300068: Tree.001
+    4300070: Fire
+    4300072: Island 0.001
+    4300074: Island 0.000
+    4300076: Fire.001
+    4300078: Tower wall
+    4300080: Tower room
+    4300082: Tower room.001
+    4300084: Roof
+    4300086: Tower room door
+    4300088: Cube.005
+    4300090: Collision mesh
+    4300092: Collision mesh 1
+    4300094: Collision mesh 2
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 2
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
